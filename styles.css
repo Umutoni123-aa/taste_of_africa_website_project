@@ -233,3 +233,76 @@ footer {
   padding: 1.5rem;
   margin-top: 2rem;
 }
+/* Contact page */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+}
+
+#contact-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+
+#contact-form label {
+  display: block;
+  font-weight: 700;
+  margin: 1rem 0 0.3rem;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Focus state */
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--yellow);
+  box-shadow: 0 0 6px var(--yellow);
+}
+
+#contact-form button {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background: var(--brown);
+}
+
+/* Messages */
+.error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.confirmation {
+  background: var(--yellow);
+  color: var(--brown);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
