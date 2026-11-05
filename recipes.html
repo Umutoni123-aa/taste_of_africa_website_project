@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Taste of Africa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Recipes</h1>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="west-africa">West Africa</button>
+      <button class="filter-btn" data-filter="east-africa">East Africa</button>
+      <button class="filter-btn" data-filter="north-africa">North Africa</button>
+    </div>
+
+    <div class="recipe-list">
+
+      <!-- Jollof Rice -->
+      <article class="recipe-card" id="jollof-rice" data-id="jollof-rice" data-region="west-africa">
+        <img src="images/jollof-rice.jpg" alt="A plate of Jollof rice">
+        <h2>Jollof Rice</h2>
+        <p>A famous <mark>tomato</mark> rice dish from Nigeria and Ghana.</p>
+
+        <button class="fav-btn" aria-label="Add Jollof Rice to favorites">❤️ Favorite</button>
+
+        <h3>Ingredients</h3>
+        <ul>
+          <li>2 cups rice</li>
+          <li>3 tomatoes</li>
+          <li>1 onion</li>
+          <li>2 tbsp oil</li>
+        </ul>
+
+        <details>
+          <summary>Cooking instructions</summary>
+          <ol>
+            <li>Blend the tomatoes and onion.</li>
+            <li>Fry the mix in oil.</li>
+            <li>Add rice and water, then cook until soft.</li>
+          </ol>
+        </details>
+
+        <iframe
+          src="https://www.youtube.com/embed/EfZEArZcfAY"
+          title="How to cook Jollof Rice"
+          allowfullscreen></iframe>
+
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=2.7%2C4.2%2C14.7%2C13.9&amp;layer=mapnik"
+          title="Map of Nigeria"
+          loading="lazy"></iframe>
+      </article>
+
+      <!-- Injera -->
+      <article class="recipe-card" id="injera" data-id="injera" data-region="east-africa">
+        <img src="images/injera.jpg" alt="A plate of Injera">
+        <h2>Injera</h2>
+        <p>A traditional Ethiopian flatbread made from <mark>teff</mark> flour.</p>
+
+        <button class="fav-btn" aria-label="Add Injera to favorites">❤️ Favorite</button>
+
+        <h3>Ingredients</h3>
+        <ul>
+          <li>2 cups teff flour</li>
+          <li>1 cup water</li>
+          <li>1 tsp salt</li>
+        </ul>
+
+        <details>
+          <summary>Cooking instructions</summary>
+          <ol>
+            <li>Mix the teff flour, water, and salt to form a batter.</li>
+            <li>Let the batter ferment for 24-48 hours.</li>
+            <li>Cook the batter on a griddle to make flatbreads.</li>
+          </ol>
+        </details>
+
+        <iframe
+          src="https://www.youtube.com/embed/NwVSl3FQt78"
+          title="How to cook Injera"
+          allowfullscreen></iframe>
+
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=33%2C3.4%2C48%2C14.9&amp;layer=mapnik"
+          title="Map of Ethiopia"
+          loading="lazy"></iframe>
+      </article>
+
+      <!-- Tagine -->
+      <article class="recipe-card" id="tagine" data-id="tagine" data-region="north-africa">
+        <img src="images/tagine.jpg" alt="A tagine pot with slow-cooked meat">
+        <h2>Tagine</h2>
+        <p>A slow-cooked stew from Morocco, made with meat, vegetables, and <mark>cumin</mark>.</p>
+
+        <button class="fav-btn" aria-label="Add Tagine to favorites">❤️ Favorite</button>
+
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 lb lamb or chicken</li>
+          <li>1 onion</li>
+          <li>2 tomatoes</li>
+          <li>1 tsp cumin</li>
+        </ul>
+
+        <details>
+          <summary>Cooking instructions</summary>
+          <ol>
+            <li>Dice the onion and tomatoes.</li>
+            <li>Brown the meat in a tagine or heavy pot.</li>
+            <li>Add the vegetables and spices, then simmer for 2 hours.</li>
+          </ol>
+        </details>
+
+        <iframe
+          src="https://www.youtube.com/embed/k5grI8mJM7c"
+          title="How to cook Tagine"
+          allowfullscreen></iframe>
+
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-13.2%2C27.6%2C-1%2C35.9&amp;layer=mapnik"
+          title="Map of Morocco"
+          loading="lazy"></iframe>
+      </article>
+
+      <!-- Isombe -->
+      <article class="recipe-card" id="isombe" data-id="isombe" data-region="east-africa">
+        <img src="images/isombe.jpg" alt="A plate of Isombe">
+        <h2>Isombe</h2>
+        <p>A Rwandan dish made from pounded <mark>cassava leaves</mark>.</p>
+
+        <button class="fav-btn" aria-label="Add Isombe to favorites">❤️ Favorite</button>
+
+        <h3>Ingredients</h3>
+        <ul>
+          <li>4 cups cassava leaves</li>
+          <li>1 onion</li>
+          <li>2 tbsp palm oil</li>
+          <li>1 tsp salt</li>
+        </ul>
+
+        <details>
+          <summary>Cooking instructions</summary>
+          <ol>
+            <li>Wash and pound the cassava leaves.</li>
+            <li>Boil them until soft.</li>
+            <li>Add the onion, oil, and salt, then simmer.</li>
+          </ol>
+        </details>
+
+        <iframe
+          src="https://www.youtube.com/embed/LCwueWa3LsQ"
+          title="How to cook Isombe"
+          allowfullscreen></iframe>
+
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=28.8%2C-2.9%2C30.9%2C-1&amp;layer=mapnik"
+          title="Map of Rwanda"
+          loading="lazy"></iframe>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Taste of Africa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
