@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+.featured {
+  padding: 2rem;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.dish-grid figure {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.dish-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.dish-grid figcaption {
+  padding: 1rem;
+}
+:root {
+  --red: #8b2e1f;
+  --brown: #4a2c17;
+  --yellow: #e8a317;
+  --cream: #fdf3e3;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
+nav {
+  background: var(--red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  color: var(--yellow);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+              url('images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero iframe {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  margin-top: 1.5rem;
+}
+
+/* Highlight */
+mark {
+  background: var(--yellow);
+  color: var(--brown);
+  padding: 0 0.25rem;
+  border-radius: 3px;
+}
+
+/* Recipes page */
+.page-title {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+/* Filter buttons */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.filter-btn {
+  background: #fff;
+  color: var(--brown);
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--red);
+  color: #fff;
+}
+
+/* Recipe cards */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.recipe-card h3 {
+  margin-top: 1rem;
+}
+
+.recipe-card ul,
+.recipe-card ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.recipe-card details {
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 1rem 0;
+}
+
+.recipe-card summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.recipe-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Favorite button */
+.fav-btn {
+  background: #fff;
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fav-btn.favorited {
+  background: var(--red);
+  color: #fff;
+}
+
+/* Used by the filter in JavaScript */
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: var(--brown);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
