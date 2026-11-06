@@ -59,3 +59,27 @@ favButtons.forEach(function (button) {
     saveFavorites(favorites);
   });
 });
+// Contact form validation
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  const messageError = document.getElementById('message-error');
+  const confirmation = document.getElementById('confirmation');
+
+  contactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (message.length <= 20) {
+      messageError.textContent = 'Your message must be more than 20 characters.';
+      return;
+    }
+
+    messageError.textContent = '';
+    contactForm.classList.add('hidden');
+    confirmation.textContent = "Thank you, " + name + "! We've received your message.";
+    confirmation.classList.remove('hidden');
+  });
+}
