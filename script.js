@@ -98,3 +98,17 @@ themeToggle.addEventListener('click', function () {
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
   themeToggle.textContent = isDark ? '☀️' : '🌙';
 });
+// Ingredient scaling
+const servingSelects = document.querySelectorAll('.servings');
+
+servingSelects.forEach(function (select) {
+  select.addEventListener('change', function () {
+    const multiplier = Number(select.value);
+    const card = select.closest('.recipe-card');
+
+    card.querySelectorAll('.amount').forEach(function (span) {
+      const base = Number(span.dataset.base);
+      span.textContent = Math.round(base * multiplier * 100) / 100;
+    });
+  });
+});

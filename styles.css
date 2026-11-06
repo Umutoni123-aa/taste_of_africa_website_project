@@ -539,7 +539,7 @@ main {
 /* Dark mode */
 body.dark {
   --cream: #1c1411;
-  --brown: #f3e3cf;
+  color: #f3e3cf;
 }
 
 body.dark .dish-grid figure,
@@ -547,31 +547,19 @@ body.dark .recipe-card,
 body.dark .region,
 body.dark .about-section,
 body.dark #contact-form,
-body.dark .trends article,
-body.dark .fav-btn,
-body.dark .filter-btn {
+body.dark .trends article {
   background: #2a1f1a;
 }
 
 body.dark .recipe-card details {
   background: #1c1411;
 }
+/* Dark mode */
 
-body.dark #contact-form input,
-body.dark #contact-form select,
-body.dark #contact-form textarea {
-  background: #1c1411;
-  color: var(--brown);
-  border-color: #5a4638;
-}
-
-body.dark .region h2,
-body.dark .about-section h2 {
-  color: var(--yellow);
-}
-
-body.dark footer {
-  background: #000;
+body.dark .filter-btn,
+body.dark .fav-btn {
+  background: #2a1f1a;
+  color: #f3e3cf;
 }
 
 body.dark .filter-btn:hover,
@@ -581,11 +569,52 @@ body.dark .fav-btn.favorited {
   color: #fff;
 }
 
+body.dark #contact-form input,
+body.dark #contact-form select,
+body.dark #contact-form textarea {
+  background: #1c1411;
+  color: #f3e3cf;
+  border-color: #5a4638;
+}
+
+body.dark .region h2,
+body.dark .about-section h2 {
+  color: var(--yellow);
+}
+
+body.dark .region a {
+  color: var(--yellow);
+}
+
+body.dark .region a:hover {
+  color: #fff;
+}
+
 body.dark .about-section.mission {
   background: var(--yellow);
-  color: #4a2c17;
 }
 
 body.dark .about-section.mission h2 {
-  color: #4a2c17;
+  color: var(--brown);
+}
+
+body.dark footer {
+  background: #000;
+}
+/* Servings dropdown */
+.recipe-card label {
+  font-weight: 700;
+}
+
+.servings {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+body.dark .servings {
+  background: #1c1411;
+  color: #f3e3cf;
 }
