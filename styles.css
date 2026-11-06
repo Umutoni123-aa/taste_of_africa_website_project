@@ -508,3 +508,20 @@ main {
     padding: 1.25rem;
   }
 }
+/* See recipe button */
+.dish-grid figcaption a {
+  display: inline-block;
+  background: var(--red);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.dish-grid figcaption a:hover {
+  background: var(--yellow);
+  color: var(--brown);
+}
