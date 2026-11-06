@@ -390,3 +390,46 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+/* Explore and trends */
+.explore,
+.trends {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.explore h2,
+.trends h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.region-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.region-links a {
+  background: var(--red);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+}
+
+.region-links a:hover {
+  background: var(--yellow);
+  color: var(--brown);
+}
+
+.trends article {
+  background: #fff;
+  border-left: 6px solid var(--yellow);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
