@@ -112,3 +112,12 @@ servingSelects.forEach(function (select) {
     });
   });
 });
+// Highlight the current page in the nav
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+
+document.querySelectorAll('nav ul a').forEach(function (link) {
+  const linkPage = link.getAttribute('href');
+  if (linkPage === currentPage || (currentPage === 'index' && linkPage === 'index.html')) {
+    link.classList.add('active');
+  }
+});

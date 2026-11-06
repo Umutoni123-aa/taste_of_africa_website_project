@@ -618,3 +618,21 @@ body.dark .servings {
   background: #1c1411;
   color: #f3e3cf;
 }
+/* Nav link styling */
+nav ul a {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul a.active {
+  background: var(--yellow);
+  color: var(--brown);
+  font-weight: 700;
+}
