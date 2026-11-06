@@ -672,3 +672,52 @@ iframe {
     font-size: 1.8rem;
   }
 }
+/* Newsletter */
+.newsletter {
+  max-width: 450px;
+  margin: 0 auto 1.5rem;
+}
+
+.newsletter label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.newsletter-row input:focus {
+  outline: none;
+  border-color: var(--yellow);
+}
+
+.newsletter-row button {
+  background: var(--yellow);
+  color: #4a2c17;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.newsletter-row button:hover {
+  background: #fff;
+}
+
+#newsletter-message {
+  margin-top: 0.5rem;
+  color: var(--yellow);
+}

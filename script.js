@@ -121,3 +121,14 @@ document.querySelectorAll('nav ul a').forEach(function (link) {
     link.classList.add('active');
   }
 });
+// Newsletter signup
+const newsletterForm = document.getElementById('newsletter-form');
+
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    document.getElementById('newsletter-message').textContent =
+      'Thanks for subscribing!';
+    newsletterForm.reset();
+  });
+}
