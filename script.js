@@ -83,3 +83,18 @@ if (contactForm) {
     confirmation.classList.remove('hidden');
   });
 }
+// Dark / light mode
+const themeToggle = document.getElementById('theme-toggle');
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark');
+  themeToggle.textContent = '☀️';
+}
+
+themeToggle.addEventListener('click', function () {
+  document.body.classList.toggle('dark');
+  const isDark = document.body.classList.contains('dark');
+
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  themeToggle.textContent = isDark ? '☀️' : '🌙';
+});

@@ -525,3 +525,67 @@ main {
   background: var(--yellow);
   color: var(--brown);
 }
+/* Toggle button */
+#theme-toggle {
+  background: transparent;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Dark mode */
+body.dark {
+  --cream: #1c1411;
+  --brown: #f3e3cf;
+}
+
+body.dark .dish-grid figure,
+body.dark .recipe-card,
+body.dark .region,
+body.dark .about-section,
+body.dark #contact-form,
+body.dark .trends article,
+body.dark .fav-btn,
+body.dark .filter-btn {
+  background: #2a1f1a;
+}
+
+body.dark .recipe-card details {
+  background: #1c1411;
+}
+
+body.dark #contact-form input,
+body.dark #contact-form select,
+body.dark #contact-form textarea {
+  background: #1c1411;
+  color: var(--brown);
+  border-color: #5a4638;
+}
+
+body.dark .region h2,
+body.dark .about-section h2 {
+  color: var(--yellow);
+}
+
+body.dark footer {
+  background: #000;
+}
+
+body.dark .filter-btn:hover,
+body.dark .filter-btn.active,
+body.dark .fav-btn.favorited {
+  background: var(--red);
+  color: #fff;
+}
+
+body.dark .about-section.mission {
+  background: var(--yellow);
+  color: #4a2c17;
+}
+
+body.dark .about-section.mission h2 {
+  color: #4a2c17;
+}
