@@ -636,3 +636,39 @@ nav ul a.active {
   color: var(--brown);
   font-weight: 700;
 }
+/* Fix small screens */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.recipe-list {
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+}
+
+.dish-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 400px) {
+  .recipe-list,
+  .featured {
+    padding: 0.75rem;
+  }
+
+  .recipe-card,
+  .region,
+  .about-section {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
