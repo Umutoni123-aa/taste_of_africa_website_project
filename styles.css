@@ -306,3 +306,44 @@ footer {
   font-size: 1.2rem;
   font-weight: 700;
 }
+/* Regions page */
+.region {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-left: 6px solid var(--red);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.region h2 {
+  color: var(--red);
+  margin-bottom: 0.75rem;
+}
+
+.region h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.region ul {
+  padding-left: 1.5rem;
+}
+
+.region a {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.region a:hover {
+  color: var(--yellow);
+}
+
+.region iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
